@@ -1,7 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 import 'package:flutter/material.dart';
-import 'next_page.dart';
+import 'Pages/top_page.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -15,63 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(title: 'My First Flutter app!!'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  List<String> titleList = ["Amazon", "Rakuten", "Yahoo", "A", "B"];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        //title: Text(widget.title),
-        title: Text(widget.title, style: TextStyle(color: Colors.amberAccent)),
-        backgroundColor: Colors.blueAccent,
-      ),
-      body: ListView.builder(
-          itemCount: titleList.length,
-          itemBuilder: (context, index) {
-            return Column(
-              children: [
-                ListTile(
-                  leading: const Icon(Icons.key),
-                  title: Text(titleList[index]),
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) =>
-                                NextPage(titleList[index])));
-                  },
-                ),
-                const Divider(
-                  thickness: 2,
-                  height: 0,
-                ),
-              ],
-            );
-          }),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          titleList.add("Google");
-          print(titleList);
-          setState(() {});
-        },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+      home: const TopPage(title: 'My First Flutter app!!'),
     );
   }
 }

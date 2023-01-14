@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>388592828802-febkbft97p171iqngshrmp7jgdut5ac6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.388592828802-febkbft97p171iqngshrmp7jgdut5ac6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDoGaWnT-_XHCWqW_a9eXh6Wvy1NA-I5Fk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>388592828802</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.simari.myFirstApp</string>
+	<key>PROJECT_ID</key>
+	<string>fir-memo-app-8a672</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-memo-app-8a672.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:388592828802:ios:98591ee759aad4ec274f9b</string>
+</dict>
+</plist>

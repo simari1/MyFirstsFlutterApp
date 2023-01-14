@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "388592828802",
+    "project_id": "fir-memo-app-8a672",
+    "storage_bucket": "fir-memo-app-8a672.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388592828802:android:e478b38da1611de4274f9b",
+        "android_client_info": {
+          "package_name": "com.simari.my_first_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388592828802-2t3lb6ba8veem9ct18f680juujakvk9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB39TxI0FZ0QbQ4IKXsc6_FZUJMq3Yg4TU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388592828802-2t3lb6ba8veem9ct18f680juujakvk9q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "388592828802-febkbft97p171iqngshrmp7jgdut5ac6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.simari.myFirstApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
